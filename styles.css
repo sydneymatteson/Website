@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Contact Page CSS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/*Layout Stuff*/
+
+#hero-image {
+	background-color: #2B2D42;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+	height: 80vh;
+}
+
+#hero-image-content {
+	margin: auto;
+	padding: 15vh 0vh;
+}
+
+#logo {
+  margin: 15px;
+	text-align: left;
+	width: 75px;
+	height: 75px;
+	-webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+#logo:hover {
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+#social-icons {
+	float: right;
+	padding: 15px;
+}
+
+.container {
+	width: 75%;
+	margin: 100px auto;
+}
+.container-left {
+	display: inline-block;
+  width: 65%;
+	margin-right: 5%;
+}
+
+.container-right {
+	display: inline-block;
+  width: 28%;
+	vertical-align: top;
+}
+
+footer {
+	text-align: center;
+	padding: 15px 0;
+	background-color: #2c2c2c;
+}
+
+.resume {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Text Stuff*/
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-family: 'Karla', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #2c2c2c;
+	text-align: left;
+	text-decoration: underline;
+}
+
+h3 {
+	font-family: 'Karla', sans-serif;
+  font-size: .8em;
+  font-weight: 700;
+  line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p {
+	font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 2.1em;
+  color: #2c2c2c;
+	text-align: left;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.container-right a {
+	color: black;
+	text-decoration: none;
+}
+
+.container-right a:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+.container-left a {
+	color: black;
+	text-decoration: none;
+}
+
+.container-left a:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+footer p {
+	font-size: .9em;
+	text-align: center;
+	color: white;
+}
+
+/*Buttons*/
+
+.button {
+	display: inline-block;
+  width: 200px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 1);
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.2s ease-out,
+              background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+
+.button:hover {
+	color: rgba(255, 0, 0, 1);
+	border: 3px solid rgba(255, 0, 0, 1);
+}
+
+/*Selection Color*/
+
+::-moz-selection {
+    color: black;
+    background: #ff0000;
+}
+
+::selection {
+    color: black;
+    background: #ff0000;
+}
+
+/*Media Queries*/
+
+@media (max-width: 48em) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
+	p {
+		font-size: 1.2em;
+		line-height: 1.8em;
+	}
+
+	#logo {
+		width: 45px;
+		height: 45px;
+	}
+
+	#hero-image-content {
+		padding: 20vh 0vh;
+	}
+
+  footer {
+    padding: 5px 0 15px 0;
+	}
+
+	.resume {
+	  margin: 50px auto;
+	  text-align: center;
+	  clear: both;
+	}
+
+	.container-left {
+	    width: 100%;
+			margin-bottom: 50px;
+	}
+
+	.container-right {
+	    width: 100%;
+	}
+}
