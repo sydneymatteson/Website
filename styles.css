@@ -82,11 +82,6 @@ html, body {
   filter: brightness(0) invert(1);
 }
 
-#logo:hover {
-	-webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
 #social-icons {
 	float: right;
 	padding: 15px;
@@ -98,24 +93,30 @@ html, body {
 }
 .container-left {
 	display: inline-block;
-  width: 65%;
-	margin-right: 5%;
+  width: 60%;
+	margin-right: 7%;
 }
 
 .container-right {
 	display: inline-block;
-  width: 28%;
+  width: 30%;
 	vertical-align: top;
+}
+
+.portfolio {
+	width: 70%;
+	margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+	margin-bottom: 25px;
 }
 
 footer {
 	text-align: center;
 	padding: 15px 0;
-}
-
-.resume {
-  margin: 0 auto;
-  text-align: center;
 }
 
 /*Text Stuff*/
@@ -163,14 +164,7 @@ a {
 }
 
 a:hover {
-	color: white;
-  -moz-box-shadow: inset 0 -1.1em 0 #ff0000;
-  -webkit-box-shadow: inset 0 -1.1em 0 #ff0000;
-  box-shadow: inset 0 -1.1em 0 #ff0000;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
+	text-decoration: underline;
 }
 
 .container-right a {
@@ -179,7 +173,8 @@ a:hover {
 }
 
 .container-right a:hover {
-	color: white;
+	color: black;
+	text-decoration: underline;
 }
 
 .container-left a {
@@ -188,7 +183,8 @@ a:hover {
 }
 
 .container-left a:hover {
-	color: white;
+	color: black;
+	text-decoration: underline;
 }
 
 footer p {
@@ -227,8 +223,8 @@ footer p {
 }
 
 ::selection {
-    color: black;
-    background: #ff0000;
+    color: white;
+    background: #000;
 }
 
 /*Media Queries*/
@@ -266,6 +262,10 @@ footer p {
 
 	.container-right {
 	    width: 100%;
+	}
+
+	.portfolio {
+		width: 95%
 	}
 
 	.footer {
