@@ -78,8 +78,6 @@ html, body {
 	text-align: left;
 	width: 75px;
 	height: 75px;
-	-webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
 }
 
 #social-icons {
@@ -112,6 +110,12 @@ img {
   width: 100%;
   height: auto;
 	margin-bottom: 25px;
+}
+
+.back-home {
+	position: fixed;
+	bottom: 0;
+	right: 15px;
 }
 
 footer {
