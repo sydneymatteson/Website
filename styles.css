@@ -48,7 +48,7 @@ table {
 }
 
 
-/* Contact Page CSS */
+/* Begin CSS */
 
 html, body {
   height: 100%;
@@ -109,7 +109,6 @@ html, body {
 img {
   width: 100%;
   height: auto;
-	margin-bottom: 25px;
 }
 
 .back-home {
@@ -121,6 +120,10 @@ img {
 footer {
 	text-align: center;
 	padding: 15px 0;
+}
+
+.space {
+	margin-bottom: 25px;
 }
 
 /*Text Stuff*/
@@ -197,27 +200,9 @@ footer p {
 	color: #2c2c2c;
 }
 
-/*Buttons*/
+/* Image Hover */
 
-.button {
-	display: inline-block;
-  width: 200px;
-  padding: 20px;
-  color: rgba(255, 255, 255, 1);
-  background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, 1);
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: color 0.2s ease-out,
-              background-color 0.2s ease-out,
-              border-color 0.2s ease-out;
-}
 
-.button:hover {
-	color: rgba(255, 0, 0, 1);
-	border: 3px solid rgba(255, 0, 0, 1);
-}
 
 /*Selection Color*/
 
