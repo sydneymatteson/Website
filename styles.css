@@ -49,8 +49,7 @@ table {
 html, body {
   height: 100%;
   width: 100%;
-  padding: 0;
-  margin: 0;
+	color: black;
   background-color: white;
 }
 
@@ -59,10 +58,12 @@ html, body {
 
 #hero-image {
 	background-color: #f1f1f1;
+	color: black;
 }
 
 #hero-image-content {
 	background-color: #f1f1f1;
+	color: black;
 	display: flex;
   justify-content: center;
   align-items: center;
@@ -88,13 +89,13 @@ html, body {
 }
 .container-left {
 	display: inline-block;
-  width: 60%;
-	margin-right: 7%;
+  width: 30%;
 }
 
 .container-right {
 	display: inline-block;
-  width: 30%;
+  width: 60%;
+	padding-left: 9%;
 	vertical-align: top;
 }
 
@@ -116,7 +117,6 @@ img {
 
 footer {
 	text-align: center;
-	padding: 15px 0;
 }
 
 .space {
@@ -129,7 +129,6 @@ h1 {
   font-family: 'Karla', sans-serif;
   font-size: 4em;
   font-weight: 700;
-  color: black;
 	text-align: center;
 	line-height: 1.5em;
 }
@@ -139,9 +138,7 @@ h2 {
   font-size: 2em;
   font-weight: 700;
   line-height: 1.4;
-  color: black;
 	text-align: left;
-	text-decoration: underline;
 }
 
 h3 {
@@ -151,7 +148,6 @@ h3 {
   line-height: 1.2;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: black;
 }
 
 p {
@@ -159,7 +155,6 @@ p {
   font-weight: 400;
   font-size: 1.3em;
   line-height: 2.1em;
-  color: black;
 	text-align: left;
 }
 
@@ -172,63 +167,39 @@ a:hover {
 	text-decoration: underline;
 }
 
-.container-right a {
-	color: black;
-	text-decoration: none;
-}
-
-.container-right a:hover {
-	color: black;
-	text-decoration: underline;
-}
-
-.container-left a {
-	color: black;
-	text-decoration: none;
-}
-
-.container-left a:hover {
-	color: black;
-	text-decoration: underline;
-}
-
 footer p {
 	font-size: .9em;
 	text-align: center;
-	color: #2c2c2c;
+	color: black;
 }
-
-/* Image Hover */
-
 
 
 /*Selection Color*/
 
 ::-moz-selection {
-    color: black;
-    background: #ff0000;
+    color: white;
+    background: black;
 }
 
 ::selection {
     color: white;
-    background: #000;
+    background: black
 }
 
 /*Media Queries*/
 
 @media (max-width: 48em) {
   h1 {
-    font-size: 2.5em;
-    line-height: 1.3em;
+    font-size: 2.6em;
+    line-height: 1em;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 1.7em;
     line-height: 1.4em;
   }
 
 	p {
-		font-size: 1.2em;
 		line-height: 1.8em;
 	}
 
@@ -237,22 +208,14 @@ footer p {
 		height: 45px;
 	}
 
-	#hero-image-content {
-		padding: 20vh 0vh;
-	}
-
-
 	.container-left {
 	    width: 100%;
-			margin-bottom: 50px;
+			margin-bottom: 10px;
 	}
 
 	.container-right {
 	    width: 100%;
-	}
-
-	.portfolio {
-		width: 95%
+			padding: 0%;
 	}
 
 	.footer {
