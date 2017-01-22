@@ -86,16 +86,17 @@ html, body {
 .container {
 	width: 85%;
 	margin: 80px auto;
+	max-width: 1440px;
 }
 .container-left {
 	display: inline-block;
-  width: 30%;
+  width: 37%;
+	margin-right: 3%;
 }
 
 .container-right {
 	display: inline-block;
-  width: 60%;
-	padding-left: 9%;
+  width: 59%;
 	vertical-align: top;
 }
 
@@ -107,6 +108,7 @@ html, body {
 img {
   width: 100%;
   height: auto;
+	margin: 50px 0;
 }
 
 .back-home {
@@ -123,7 +125,7 @@ footer {
 	margin-bottom: 25px;
 }
 
-/*Text Stuff*/
+/* Text */
 
 h1 {
   font-family: 'Karla', sans-serif;
@@ -135,7 +137,7 @@ h1 {
 
 h2 {
 	font-family: 'Karla', sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 1.4;
 	text-align: left;
@@ -143,23 +145,23 @@ h2 {
 
 h3 {
 	font-family: 'Karla', sans-serif;
-  font-size: .8em;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 1.2;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+  line-height: 1.4;
+	text-align: left;
 }
 
 p {
 	font-family: 'Karla', sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
-  line-height: 2.1em;
+  font-size: 1.2em;
+  line-height: 1.9em;
 	text-align: left;
+	color: #818282;
 }
 
 a {
-  color: black;
+  color: #000;
   text-decoration: none;
 }
 
@@ -183,7 +185,7 @@ footer p {
 
 ::selection {
     color: white;
-    background: black
+    background: black;
 }
 
 /*Media Queries*/
