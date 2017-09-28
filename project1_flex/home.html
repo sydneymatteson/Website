@@ -12,8 +12,6 @@
       }
 
       body {
-        display: flex;
-        flex-direction: column;
         font-family: 'Montserrat', sans-serif;
       }
 
@@ -21,6 +19,7 @@
         display: flex;
         flex-direction: row;
         background-image: url('images/hero.jpg');
+        background-position: top center;
         background-attachment: fixed;
         height: 70vh;
         align-items: baseline;
@@ -72,7 +71,7 @@
         display: flex;
         flex-flow: row nowrap;
         flex: 1 1 0;
-        height: 80vh;
+        height: 60vh;
       }
 
       section, article, aside {
@@ -94,11 +93,13 @@
 
       main article.middle {
         background-image: url('images/resort_1.jpg');
+        background-position: top center;
         flex: 0 0 20vw;
       }
 
       main aside {
         background-image: url('images/resort_2.jpg');
+        background-position: top center;
         flex: 0 0 20vw;
       }
 
@@ -107,8 +108,7 @@
         justify-content: center;
         background-color: hotpink;
         color: white;
-        height: 7vh;
-        padding: .65em;
+        padding: 1.1em;
       }
 
     </style>
