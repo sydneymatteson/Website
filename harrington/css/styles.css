@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/poster.jpg');
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero h2 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Vollkorn', serif;
+  font-size: 65px;
+  color: white;
+}
+
+header img {
+  padding: 2em 2em;
+}
+
+nav {
+  padding: 2em 2em;
+}
+
+nav a {
+  font-weight: 400;
+  text-decoration: none;
+  margin: 1em;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #333;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+.reviews {
+  text-align: center;
+  background-color: #FAF9F9;
+  padding-top: 3em;
+}
+
+#reviews {
+  display: flex;
+  align-content: space-around;
+  background-color: #FAF9F9;
+  padding: 3em;
+  padding-top: 1em;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.card h4 {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #81B2E2;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.button1 {
+  background-color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-top: 2px solid #e5e5e5;
+}
+
+.associations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #81B2E2;
+  padding: 2em 0;
+}
+
+.office {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.office-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.gallery img {
+  padding: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3em;
+}
+
+.about {
+  flex: 2;
+  padding: 1.5em;
+  background-color: #FAF9F9;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+  padding: 3em;
+}
+
+.align-right {
+  text-align: right;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.20;
+  opacity: 1.00;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  opacity: 0.70;
+  margin-bottom: 25px;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+.forms {
+  background-color: #153251;
+  display: flex;
+  justify-content: space-around;
+  padding: 3em;
+  padding-top: 2em;
+}
+
+#forms {
+  background-color: #153251;
+  text-align: center;
+}
+
+#forms h1 {
+  color: white;
+  padding-top: 3em;
+}
+
+#forms p {
+  color: white;
+  opacity: 1;
+  padding-top: 5px;
+}
