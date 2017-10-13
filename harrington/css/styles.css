@@ -203,7 +203,7 @@ footer p {
   text-align: center;
 }
 
-.forms a {
+.forms a, .form a:visited {
   color: white;
   text-decoration: none;
 }
