@@ -193,6 +193,19 @@ footer p {
   justify-content: space-around;
   padding: 3em;
   padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.even {
+  display: flow;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+}
+
+.forms a {
+  color: white;
+  text-decoration: none;
 }
 
 #forms {
@@ -208,5 +221,4 @@ footer p {
 #forms p {
   color: white;
   opacity: 1;
-  padding-top: 5px;
 }
