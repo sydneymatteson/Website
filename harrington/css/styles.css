@@ -72,13 +72,14 @@ section img {
 
 #reviews {
   display: flex;
-  align-content: space-around;
+  justify-content: space-around;
   background-color: #FAF9F9;
   padding: 3em;
   padding-top: 1em;
 }
 
 .card {
+  width: 30%;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -104,6 +105,11 @@ section img {
   text-align: center;
   text-decoration: none;
   border-top: 2px solid #e5e5e5;
+}
+
+.button1:hover {
+  background-color: #81B2E2;
+  color: white;
 }
 
 .associations {
