@@ -287,7 +287,8 @@ a {
     }
 
     .quote {
-      font-size: 2em;
+      width: 80vw;
+      font-size: 1.75em;
     }
 
     .mark {
