@@ -287,11 +287,19 @@ a {
     }
 
     .quote {
-      font-size: 1.5em;
+      font-size: 2em;
     }
 
     .mark {
       display: none;
+    }
+
+    .mark2 {
+      display: none;
+    }
+
+    .card {
+      margin-bottom: 20px;
     }
 
 }
