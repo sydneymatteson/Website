@@ -194,6 +194,17 @@ header img {
   transition: all 0.25s ease;
   margin-top: 2em;
 }
+
+.button a {
+  color: #29c27d;
+}
+
+.button:hover a {
+  color: white;
+  background: #29c27d;
+  border-radius: 20px;
+}
+
 .button:hover {
   color: white;
   background: #29c27d;
@@ -361,14 +372,13 @@ a {
     }
 
     #mission {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom;
+      background-image: url();
     }
 
     .quote {
       padding: 1em 0;
-      margin: 0 0;
+      margin: 0 auto;
+
     }
 
 }
