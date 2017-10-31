@@ -276,6 +276,9 @@ a {
 
 
 @media only screen and (max-width: 750px) {
+    body {
+      overflow-x: hidden;
+    }
     header {
       width: 100%;
       display: flex;
@@ -324,7 +327,6 @@ a {
     .half-holder {
       display: block;
     }
-
 
     .quote {
       width: 80vw;
