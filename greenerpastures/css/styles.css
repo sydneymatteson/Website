@@ -363,11 +363,12 @@ a {
     #mission {
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center bottom;
+      background-position: bottom center;
     }
 
     .quote {
       padding: 1em 0;
+      margin: 0;
     }
 
 }
