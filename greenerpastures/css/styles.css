@@ -360,4 +360,12 @@ a {
       padding-bottom: 40px;
     }
 
+    #mission {
+      background-size: contain;
+    }
+
+    .quote {
+      padding: 1em 0;
+    }
+
 }
