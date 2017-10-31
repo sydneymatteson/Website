@@ -12,7 +12,6 @@ body {
   margin: 0;
 }
 
-
 header {
   background-color: #29c27d;
   color: white;
@@ -31,6 +30,16 @@ header a {
   padding: 2em;
   font-weight: 700;
   font-size: 1.125em;
+}
+
+header a:hover {
+  color: #26547C;
+}
+
+header img {
+  height: 70px;
+  width: auto;
+  margin-left: 1em;
 }
 
 .donate-button {
@@ -67,7 +76,7 @@ header a {
 }
 
 #mission {
-  background-image: url();
+  background-image: url('../images/field.svg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -99,6 +108,7 @@ header a {
   width: 85%;
   margin: 0 auto;
   padding-bottom: 5em;
+  padding-top: 2em;
 }
 
 .card {
@@ -109,6 +119,7 @@ header a {
   font-family: 'Vollkorn', serif;
   font-size: 2.75em;
   margin: 3em auto;
+  margin-top: 5em;
   width: 60vw;
   text-align: center;
   opacity: .7;
@@ -121,7 +132,8 @@ header a {
   text-align: left;
   margin: 0;
   display: block;
-  margin-bottom: -140px;
+  margin-bottom: -120px;
+  margin-left: -60px;
 }
 
 .mark2 {
@@ -130,9 +142,8 @@ header a {
   text-align: right;
   margin: 0;
   display: block;
-  margin-top: -180px;
+  margin-top: -160px;
 }
-
 
 .beige {
   background-color: #F5F5EA;
@@ -165,7 +176,7 @@ header a {
 }
 
 .half:hover {
-  box-shadow: 0 2px 20px rgba(41,194,125,.3);
+  box-shadow: 0 2px 20px rgba(41,194,125,.2);
 }
 
 .ourgoals {
@@ -197,10 +208,16 @@ footer {
 .inner {
   width: 85%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.inner img {
+  margin-bottom: 10px;
 }
 
 footer p {
   opacity: 1;
+  line-height: 1.95em;
 }
 
 h1 {
@@ -219,6 +236,7 @@ h3 {
   line-height: 1.5em;
   margin: 0;
   margin-bottom: .4em;
+  color: #26547C;
 }
 
 h4 {
@@ -258,8 +276,26 @@ a {
 
 
 @media only screen and (max-width: 750px) {
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    header img {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    nav {
+      padding-bottom: 20px;
+    }
+
     .wrapper {
       display: block;
+      padding-bottom: 40px;
     }
 
     .card-holder {
@@ -268,6 +304,7 @@ a {
 
     .card {
       width: 100%;
+      padding-bottom: 25px;
     }
 
     .helping {
@@ -279,12 +316,15 @@ a {
     }
 
     .half {
+      width: auto;
+      display: block;
       margin-bottom: 1em;
     }
 
     .half-holder {
-      flex-direction: column;
+      display: block;
     }
+
 
     .quote {
       width: 80vw;
@@ -292,7 +332,8 @@ a {
     }
 
     .mark {
-      display: none;
+      margin-bottom: -90px;
+      margin-left: 0;
     }
 
     .mark2 {
@@ -301,6 +342,16 @@ a {
 
     .card {
       margin-bottom: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .beige {
+      height: 100%;
+      margin-bottom: 0;
+      padding-bottom: 40px;
     }
 
 }
