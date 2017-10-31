@@ -287,6 +287,10 @@ a {
       height: auto;
     }
 
+    header a {
+      padding: 1em;
+    }
+
     header img {
       padding-top: 20px;
       padding-bottom: 20px;
