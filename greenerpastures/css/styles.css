@@ -321,6 +321,10 @@ a {
       padding-bottom: 40px;
     }
 
+    .hero-wrapper {
+      padding-top: 25px;
+    }
+
     .card-holder {
       flex-direction: column;
     }
