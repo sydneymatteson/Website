@@ -37,7 +37,7 @@ header a:hover {
 }
 
 header img {
-  height: 70px;
+  height: 85px;
   width: auto;
   margin-left: 1em;
 }
@@ -284,7 +284,12 @@ a {
   font-weight: 400;
 }
 
-
+.anchor{
+  display: block;
+  height: 15vh; /*same height as header*/
+  margin-top: -15vh; /*same height as header*/
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 750px) {
     body {
