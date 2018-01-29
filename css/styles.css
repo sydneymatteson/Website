@@ -57,7 +57,7 @@ html, body {
 /*Layout Stuff*/
 
 nav {
-	background-color: #4A4A4A;
+	background-color: #343ac7;
 	color: #fff;
 	padding-top: 2em;
 }
@@ -74,7 +74,7 @@ nav a {
 }
 
 #hero {
-	background-color: #4A4A4A;
+	background-color: #343ac7;
 	color: #fff;
 	height: 70vh;
 	display: flex;
