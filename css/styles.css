@@ -54,10 +54,10 @@ html, body {
   font-weight: 300;
 }
 
-/*Layout Stuff*/
+/* Layout */
 
 nav {
-	background-color: #343ac7;
+	background-color: #0000ff;
 	color: #fff;
 	padding-top: 2em;
 }
@@ -74,7 +74,7 @@ nav a {
 }
 
 #hero {
-	background-color: #343ac7;
+	background-color: #0000ff;
 	color: #fff;
 	height: 70vh;
 	display: flex;
@@ -136,14 +136,47 @@ nav a {
 .half img {
   width: 100%;
   height: auto;
-	transition: transform 200ms;
 }
 
-.half img:hover {
-	transition: transform 200ms;
-	transform: scaleX(1.03) scaleY(1.03);
-	opacity: .45;
+.half-container {
+	position: relative;
+	transition: all .2s ease-in-out 0s;
+	color: rgba(255, 0, 0, 0);
 }
+
+.text {
+  color: #fff;
+  font-size: 1.8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #0000ff;
+}
+
+.half-container:hover .overlay {
+  opacity: .8;
+}
+
+.half-container:hover {
+	transition: all .2s ease-in-out 0s;
+	transform: scale(1.03);
+	box-shadow: 0 20px 40px -20px rgba(0, 0, 0, .5);
+}
+
 
 img {
 	width: 100%;
@@ -197,7 +230,7 @@ h4 {
   line-height: 1.7;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #343ac7;
+	color: #0000ff;
 }
 
 p {
@@ -217,11 +250,22 @@ div.container-portfolio p {
 a {
   color: #000;
   text-decoration: none;
+  position: relative;
 }
 
-a:hover {
-	color: #343ac7;
-	text-decoration: underline;
+a::after {
+	content: '';
+	height: 2px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	background: #0000ff;
+	transition: 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 header a:hover {
