@@ -278,6 +278,14 @@ a:hover::after {
   width: 100%;
 }
 
+a img::after {
+	height: 0;
+}
+
+a img:hover::after {
+	width: 0;
+}
+
 header a:hover {
 	color: white;
 }
