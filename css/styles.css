@@ -57,7 +57,7 @@ html, body {
 /* Layout */
 
 nav {
-	background-color: #0000ff;
+	background-color: #636363;
 	color: #fff;
 	padding-top: 2em;
 }
@@ -74,7 +74,7 @@ nav a {
 }
 
 #hero {
-	background-color: #0000ff;
+	background-color: #636363;
 	color: #fff;
 	height: 70vh;
 	display: flex;
@@ -288,6 +288,10 @@ a img:hover::after {
 
 header a:hover {
 	color: black;
+}
+
+header a:hover::after {
+  width: 0;
 }
 
 footer p {
