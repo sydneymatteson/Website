@@ -57,7 +57,7 @@ html, body {
 /* Layout */
 
 nav {
-	background-color: #636363;
+	background-color: #000;
 	color: #fff;
 	padding-top: 2em;
 }
@@ -70,11 +70,11 @@ nav {
 }
 
 nav a {
-	color: #fff;
+	color: #DEDEDE;
 }
 
 #hero {
-	background-color: #636363;
+	background-color: #000;
 	color: #fff;
 	height: 70vh;
 	display: flex;
@@ -213,6 +213,7 @@ h1 {
 	line-height: 1.5em;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	color: #DEDEDE;
 }
 
 h2 {
@@ -222,6 +223,7 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	text-align: center;
+	color: #DEDEDE;
 }
 
 h3 {
@@ -287,7 +289,7 @@ a img:hover::after {
 }
 
 header a:hover {
-	color: black;
+	color: #0000ff;
 }
 
 header a:hover::after {
@@ -299,6 +301,7 @@ footer p {
 	text-align: center;
 	color: #4A4A4A;
 }
+
 
 /*Selection Color*/
 
