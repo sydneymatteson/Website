@@ -6,7 +6,7 @@
 
   <title>PolyHealth+</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/styles.css">
@@ -26,12 +26,27 @@
       font-size: 1.2em;
     }
 
+    .problem {
+      background-color: #f5f5f5;
+    }
+
+    .container-portfolio-color {
+    	width: 60%;
+    	margin: 0 auto;
+      padding: 80px 0;
+    	max-width: 1440px;
+    }
+
     h1, h2 {
       color: #fff;
     }
 
     h1 {
-      font-weight: 700;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-weight: 600;
     }
 
     h4 {
@@ -42,13 +57,86 @@
     	background: #26CD7A;
     }
 
+    li {
+      font-size: 1.2em;
+      line-height: 1.8em;
+    	color: #818282;
+      text-indent: 1em;
+    }
+
+    li:last-child {
+      margin-bottom: 2em;
+    }
+
+    ul li:before {
+		  content: "→ \0020";
+    }
+
+    strong {
+      font-weight: 400;
+      color: #26CD7A;
+    }
+
+    /* Quote Slider */
+    .slideshow-container {
+      position: relative;
+      background: #26CD7A;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .background-slider {
+      background: #26CD7A;
+    }
+
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* Next button hover */
+    .prev:hover, .next:hover {
+      color: black;
+    }
+
+    /* Quote style */
+    q {
+      font-size: 1.4em;
+      line-height: 1.5em;
+    	color: #fff;
+      font-weight: 600;
+    }
+
   </style>
 
 </head>
 
 <body>
   <header id="top">
-
 
     <div id="hero">
       <h1>PolyHealth+</h1>
@@ -58,9 +146,15 @@
 
   </header>
 
-  <div class="container-portfolio">
+
+    <div class="problem">
+      <div class="container-portfolio-color">
     <h3>Problem Statement</h3>
-    <p>Cal Poly students need an easy way to schedule appointments, check in for appointments, and communicate with Campus Health & Wellbeing. Campus Health & Wellbeing is shifting towards scheduled appointments rather than walk-ins and the current system of scheduling is difficult to use. Along with scheduling appointments, students need to be able to check in and fill out forms at any location, not just in the Health & Wellbeing building. Students and healthcare providers also need an easy and quick way to communicate with each other to share important information in real time whether through text or video.</p>
+    <p><strong>Cal Poly students need an easy way to schedule appointments, check in for appointments, and communicate with Campus Health & Wellbeing.</strong> Campus Health & Wellbeing is shifting towards scheduled appointments rather than walk-ins and the current system of scheduling is difficult to use. Along with scheduling appointments, students need to be able to check in and fill out forms at any location, not just in the Health & Wellbeing building. Students and healthcare providers also need an easy and quick way to communicate with each other to share important information in real time whether through text or video.</p>
+  </div>
+    </div>
+
+    <div class="container-portfolio">
 
     <div class="space"></div>
 
@@ -72,17 +166,94 @@
 
     <h4>Competitive Analysis</h4>
     <p>Based on the competitive analysis, the direct competition to Campus Health & Wellbeing would be French Hospital owned by Dignity Health. They have a variety of apps that have a majority of the features we're looking to implement but all features are spread around multiple apps that can make it confusing to users.</p>
-    <p>
-    We also looked into Urgent Cares in San Luis Obispo because that's where students would most likely go to if not at Cal Poly. Most of their websites were outdated and didn't seem to feature any digital capabilities. A few did have patient portals that gave access to test results, making appointments and payments, and patient-doctor communication.</p>
-    <p>
-    Stanford Health Care MyHealth is considered indirect competition but it is a great model to look at considering it's for university health centers and it has all of the features we're looking to actualize.</p>
-    <p>
-    In an unrelated field to healthcare, Squire allows users the ability to find and schedule appointments with barbers. The app adds an interesting aspect that allows customers to pick different services with an allotted amount of time. Squire also features, appointment reminders, customers to send photos, and customer profiles.</p>
+    <p>We also looked into Urgent Cares in San Luis Obispo because that's where students would most likely go to if not at Cal Poly. Most of their websites were outdated and didn't seem to feature any digital capabilities. A few did have patient portals that gave access to test results, making appointments and payments, and patient-doctor communication.</p>
+    <p>Stanford Health Care MyHealth is considered indirect competition but it is a great model to look at considering it's for university health centers and it has all of the features we're looking to actualize.</p>
+    <p>In an unrelated field to healthcare, Squire allows users the ability to find and schedule appointments with barbers. The app adds an interesting aspect that allows customers to pick different services with an allotted amount of time. Squire also features, appointment reminders, customers to send photos, and customer profiles.</p>
     <img src="images/polyhealth_competitive_analysis.jpg" alt="PolyHealth+ Competitive Analysis">
 
     <div class="space"></div>
 
+    <h4>User Findings</h4>
+    <p>We interviewed 6 different individuals that had used the Health & Wellbeing Center multiple times throughout their time at Cal Poly.</p>
+    <ul>
+      <li>Only go to the Health Center if they have to</li>
+      <li>Preferred because it’s ‘free’</li>
+      <li>Use apps to schedule other services</li>
+      <li>Hate long wait times</li>
+      <li>Want more information about appointment availability</li>
+      <li>Would like text reminders</li>
+      <li>Think an app would make the Health Center appear more high-tech</li>
+    </ul>
   </div>
+
+<div class="background-slider">
+
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <q>“My local doctor uses an app by the Palo Alto Medical Foundation which let’s me send a message to a doctor about a problem/symptoms and they often respond promptly and with helpful advice. It doesn’t always save me a trip to their office but it is a nice feature”</q>
+        </div>
+
+        <div class="mySlides">
+          <q>“I don’t like to call into anywhere for an appointment in general because it can be time consuming. But I almost always call before going to the Health Center to see if I can avoid busy periods”</q>
+        </div>
+
+        <div class="mySlides">
+          <q>“The Health Center just feels like an outdated facility. If it had a modern app, I think others would feel more confident and comfortable going there because it would suggest that the center is up-to-date with technology”</q>
+        </div>
+
+        <div class="mySlides">
+          <q>“I’ve been to the Health Center about 2 times during each of my 5 years at Cal Poly. Out of all those times, never was I able to get an online appointment during the date that worked for me because a doctor was unavailable. I don’t know if it’s because I’m using the portal wrong, but it’s super frustrating”</q>
+        </div>
+
+        <div class="mySlides">
+          <q>“I don’t go to the Health Center unless I absolutely have to. It would be interesting if I could use a virtual doctor because then I could talk with a doctor before I’m dying and possibly get diagnosed before it gets horrible”</q>
+        </div>
+
+        <div class="mySlides">
+          <q>“I’m constantly on the go so when I get sick I just want to schedule an appointment then show up without having to wait forever”</q>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">←</a>
+        <a class="next" onclick="plusSlides(1)">→</a>
+
+      </div>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+      <div class="container-portfolio">
+      <div class="space"></div>
+      <h4>Persona</h4>
+      <p>We created a persona based on the themes uncovered during our interviews. The typical individual we interviewed didn't regulary visit the Health Center but when they needed to, it was critical that they could easily schedule an appointment since they're busy.</p>
+      <img src="images/polyhealth_persona.png" alt="PolyHealth+ Competitive Analysis">
+    </div>
 
   <footer>
     <p><a href="#top">Back to Top</a></p>
