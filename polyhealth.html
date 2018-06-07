@@ -176,6 +176,10 @@
       padding: 10px;
     }
 
+    .small {
+      width: 50%;
+    }
+
     .ut th {
       border: 1px solid #C0C0C0;
       padding: 10px;
@@ -187,6 +191,30 @@
       text-align: center;
       padding: 10px;
     }
+
+    .special {
+      text-align: left;
+    }
+
+    .special td {
+      text-align: left;
+    }
+
+    .ut td:first-child {
+      text-align: right;
+    }
+
+    caption {
+      padding: 1em 0;
+      font-weight: 700;
+      color: #26CD7A;
+    }
+
+    .proto {
+      display: flex;
+      justify-content: center;
+    }
+
   </style>
 
 </head>
@@ -414,8 +442,7 @@
     <div class="space"></div>
 
     <h4>User Testing</h4>
-    <p>We had 6 individuals test our hi-fi prototype of the Cal Poly Health Center app. Individuals were given a packet of testing information which consisted of the reason for the testing, consent forms, tasks, SUS survey, and post-test questions. The overview
-      and tasks are shown below.</p>
+    <p>We had 6 individuals test our hi-fi prototype of the Cal Poly Health Center app. Individuals were given a packet of testing information which consisted of the reason for the testing, consent forms, tasks, SUS survey, and post-test questions. The overview and tasks are shown below.</p>
 
     <h4>Tasks</h4>
     <p><strong>Task 1</strong> – You have the flu so you need to schedule an appointment for May 21st at 2pm.</p>
@@ -443,7 +470,7 @@
       <caption>Time to Complete</caption>
       <thead>
         <tr>
-          <th>Participant</th>
+          <th></th>
           <th>Task 1 (s)</th>
           <th>Task 2 (s)</th>
           <th>Task 3 (s)</th>
@@ -505,11 +532,11 @@
 
     <div class="space"></div>
 
-    <table class="ut">
+    <table class="ut small" style="margin: 0 auto;">
       <caption>SUS Score</caption>
       <thead>
         <tr>
-          <th>Participant</th>
+          <th></th>
           <th>Score</th>
         </tr>
       </thead>
@@ -547,11 +574,11 @@
 
     <div class="space"></div>
 
-    <table class="ut">
+    <table class="ut special">
       <caption>Testing Errors</caption>
       <thead>
         <tr>
-          <th>Participant</th>
+          <th></th>
           <th>Unintended</th>
           <th>Slip</th>
           <th>Mistake</th>
@@ -575,7 +602,7 @@
           <td>2</td>
           <td>Low</td>
           <td>[1] User tried to check in for appointment without updating health history. A solution would be to change the state of the “check-in” button so it does not appear tappable unless both items are verified
-          <br> [2] In Virtual Doctor, the user tried to start a video call by tapping the chat icon instead of the video icon. A solution would be to add text labels to the buttons to make their functions more obvious.</td>
+          <br><br> [2] In Virtual Doctor, the user tried to start a video call by tapping the chat icon instead of the video icon. A solution would be to add text labels to the buttons to make their functions more obvious.</td>
         </tr>
         <tr>
           <td>P3</td>
@@ -618,7 +645,7 @@
     	<caption>Demographics & Net Promoter Score<br></caption>
     	<thead>
     	<tr>
-    		<th>Participant<br></th>
+    		<th></th>
     		<th>Age</th>
     		<th>Gender</th>
     		<th>Major</th>
@@ -695,6 +722,15 @@
       <li>3 out of 6 participants said they would be more likely to use the messaging function over the Virtual Doctor option.</li>
       <li>All participants were willing to recommend this app to a friend.</li>
     </ul>
+
+    <div class="space"></div>
+
+    <h4>Final Prototype</h4>
+    <p>Based on our user findings and mistakes that users made, we made adjustments to the prototype including removing the hamburger menu and makes it a home icon, changing the arrow to edit appointments to say 'edit', and making the check-in button faded until all required items were completed.</p>
+
+    <div class="proto">
+    <iframe width="337" height="600" src="https://xd.adobe.com/embed/68d381fd-d96a-40be-6027-f16ae6db716b-1ee2/?hints=off" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
   </div>
